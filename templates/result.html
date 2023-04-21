@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Final-Year-Project</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+</style>
+</head>
+<body>
+
+
+  <nav>
+    <div class="nav-wrapper  purple darken-3">
+      <a href="#" class="brand-logo ">Result</a>
+      
+    </div>
+  </nav>
+  
+  <h2><p style="text-align:center;">Heart Disease Prediction</p></a></h2>
+   
+  <h2>Results:</h2>
+ 
+  {% if prediction == 1%}
+	<h2 style="color:red;">Sorry to say, chances of having Heart disease is more, please consult a Doctor.</h2>
+	<p style="text-align:center;"><img src="https://www.heart.org/-/media/images/news/2019/july-2019/0725lifeexpectancy_sc.jpg" alt="HTML" width="450" height="350"></p>
+  {% elif prediction == 0%}
+	<h2 style="color:blue;">No Worries!!! You don't have Heart disease.</h2>
+  <p style="text-align:center;"></p><img src="https://www.becomingminimalist.com/wp-content/uploads/2019/09/how-to-be-happy.jpg" alt="HTML" width="350" height="250"></p>
+  
+	{% endif %}
+  
+  
+  <footer class="page-footer  purple darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+      © 2023 Copyright
+      <a class="grey-text text-lighten-4 right" href="#!">Meachine-Learning-Developer</a>
+      </div>
+    </div>
+  </footer>
+ 
+  
+  </body>
+  </html>
+  
+
+    
